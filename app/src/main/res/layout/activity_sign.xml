@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SignActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:elevation="20dp"
+        android:padding="20dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/title"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="KnowME"
+                android:textColor="#3700B2"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:text="Get Your Information in Realtime"
+                android:layout_below="@id/title"/>
+            <EditText
+                android:id="@+id/edtUser"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subtitle"
+                android:hint="Enter Username"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/edtPass"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtUser"
+                android:inputType="textPassword"
+                android:hint="Enter Password"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"/>
+            <Button
+                android:id="@+id/btnSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign-In!"
+                android:layout_below="@id/edtPass"
+                android:gravity="center"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_below="@id/btnSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#3700B1"
+                android:textSize="15dp"
+                android:text="New User?" />
+
+
+            <!--Google Sign In Button-->
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

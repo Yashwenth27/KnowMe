@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary_dark"
+    tools:context=".RegisterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:background="@color/white"
+        android:padding="20dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_gravity="top">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="KnowME"
+                android:textColor="#3700B2"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/subs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Get Your Information in Realtime"
+                android:layout_below="@id/title">
+
+            </TextView>
+            <TextView
+                android:id="@+id/txtUser"
+                android:paddingTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subs"
+                android:text="Enter Username"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtUser"
+                android:id="@+id/edtUser"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/txtPass"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtUser"
+                android:text="Enter Password"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPass"
+                android:id="@+id/edtPass"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/txtName"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtPass"
+                android:text="Enter Name"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtName"
+                android:id="@+id/edtName"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/txtAge"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtName"
+                android:text="Enter Age"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAge"
+                android:id="@+id/edtAge"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/txtStrength"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtAge"
+                android:text="Enter Strengths"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtStrength"
+                android:id="@+id/edtStrengths"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/btnUploader"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtStrengths"
+                android:layout_marginHorizontal="30dp"
+                android:text="Upload Photo"/>
+            <ImageView
+                android:id="@+id/selectedImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/btnUploader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnUploader"
+                android:text="Register"
+                android:id="@+id/btnRegister"/>
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

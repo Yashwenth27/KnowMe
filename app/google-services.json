@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "354200726942",
+    "project_id": "knowme-cc8dc",
+    "storage_bucket": "knowme-cc8dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354200726942:android:89825cfad968c381683a8f",
+        "android_client_info": {
+          "package_name": "com.example.knowme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6ZoF09CHxpWkLnYuFpIGP1-LGPb8bBn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
